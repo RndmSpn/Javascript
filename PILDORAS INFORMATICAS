@@ -1,0 +1,1221 @@
+/* Comentarios*/
+
+
+/*
+
+Lenguajes de programación general Java
+
+      Se pueden crear aplicaciones para todo.
+      APPLETS aplicaciones que se ejecutan en el navegador.
+      Aplicaciones de escritorio, movil, tablets etc.
+
+Lenguajes específicos o de proposito concreto
+
+      Ejemplo Java Script -> navegador
+
+/////////////   Caracteristicas Java Script -->-->Agrega interactividad y proporciona efectos visuales   //////////////////////////
+
+Interpretado
+Se ejecutan en local -> De respuesta inmediata.
+
+JQuery 
+
+Libreria de codigo Java Script ya elaborado, libre, de código abierto.
+Testeado, funciona en todos los navegadores
+$(function(){//ocultar con desvanecimiento
+    $("body").hide() .fadeIn(3000);
+});
+
+Se ubica en el <head> / <script> o archivo externo.
+
+ventanas alert -> ventanas modal : Se abren en primer plano  y no dejan manipular nada de lo que esta en segundo plano, no se pueden minimizar
+                                    Detienen el  flujo del código.
+
+
+<script>
+    //sentencias
+    document.write("Hameleire");
+</script>
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+///////////   Variables   ///////////////////////////////////////////////////////////////
+
+// Dar nombre a una variable nombre , $nombre, _nombre , nombre1 , nombre_1, nombre$_1
+
+var nombre;
+
+// Declarar varias variables en la misma linea
+
+   var nomrbre=0;record=500,jugador="Juan";
+
+/// Almacena el texto inroducido en la ventana
+
+    var nombre=prompt("Intoduce tu nombre porfavor");
+
+/// Seleccionar con selectores css
+
+/// const elementoPorId = document.querySelector('#mi-id')
+/// const elementoPorClase = document.querySelector('.mi-clase')
+/// const elementoPorTag = document.querySelector('mi-tag')
+/// const elementoPorNombre = document.querySelector('[name="mi-nombre"]')
+
+/// Ejecutar funciones cuando se lanza un evento
+
+miElemento.addEventListener("click",()=>{
+  // Esta funcion se ejecuta cuando
+  //  se hace click sobre miElemento
+});
+
+//////////////////////////////////////////////////////////
+
+var $preciounidad, $cantidad, $total;
+$preciounidad=5;
+cantidad=100;
+$total=$preciounidad*cantidad;
+//$total=Number($preciounidad)*$cantidad;//Number convierte string a numeros si es posible
+alert("El importe total de la compre es:" + $total + "€");
+
+
+///// Calcula precio basico ///////
+
+var $preciounidad, $cantidad, $total;
+$preciounidad=5;
+$cantidad=100;
+$total=$preciounidad*$cantidad;
+
+alert("El importe total de la compre es:" + $total + "€");
+
+//// Quitaaños /////
+
+var $nombre=prompt("Intoduce tu nombre porfavor");
+var $apellido=prompt("Intoduce tu apellido porfavor");
+var $edad=prompt("Intoduce tu edad porfavor");
+var $restando=prompt("Cuantos años te quieresquitar?");
+$edad-=$restando;
+
+document.write("<p>");
+document.write($nombre + " " + $apellido + " " + $edad );
+document.write("</p>");
+
+
+/////////////////////////
+//////  Arrays //////////
+/////////////////////////
+
+// Ejemplo  Carrito de compra
+
+var $articulos=["zapatilla","pantalon","camiseta","calcetines"];
+
+/// Propiedades y Metodos /////
+
+// Tamaño , Añadir al principio , Añ. al final , Eliminar al principio , Elim. al final
+// Length ,      Shift          ,     Push     ,          Unshift      ,     Pop .
+ document.write($articulos.lenght);
+
+ var $articulos=["zapatilla","pantalon","camiseta","calcetines"];
+
+ document.write("<p>");
+ document.write($articulos[0]);
+ document.write($articulos[1]);
+ document.write($articulos[2]);
+ document.write($articulos[3]);
+ document.write("</p>");
+ document.write("<p>");
+ alert($articulos.length);
+ document.write("</p>");
+ document.write($articulos[$articulos.length-1] + " " );
+ $articulos.unshift("Balon");
+ $articulos.push(prompt("Introduce articulo"));
+ 
+///////////////////////////////////////////////////
+///////////////// POO /////////////////////////////
+///////////////////////////////////////////////////
+
+Nomenclatura del Punto 
+// Modificar propiedad desde Javascript
+renault.color="azul";
+
+// Acceder a metodo desde Javascript
+renault.accelerar();
+
+document.write();
+window.alert();
+boton.style.width="500px";
+boton.style.backgroundColor="red";
+boton.focus();
+
+                // Seleccionar elmento por Id
+var $miboton=document.getElementById("boton1");
+$miboton.style.width="300px";
+
+
+/////////////////////////////////////////////////////
+///////////////  Botones ////////////////////////////
+/////////////////////////////////////////////////////
+
+//<input type="button" id="boton1"></input>
+//<input type="button" id="boton2"></input>
+//<input type="ext" id="micuadro"></input>
+
+    var miboton=document.getElementById("boton1");
+    var miboton2=document.getElementById("boton2");
+    miboton.style.width="250px";
+    var cuadrotexto=document.getElementById("micuadro");
+   // miboton.style.backgroundColor="blue";
+    miboton2.style.width="250px";
+    //miboton2.style.backgroundColor="blue";
+    miboton2.focus();
+    cuadrotexto.style.background="red";
+    cuadrotexto.value="Escriba aqui";
+    cuadrotexto.style.width="200px";
+    cuadrotexto.style.height="100px";
+
+/////////////////////////////////////////////////
+/// Control de Flujo ; Condicionales y bucles;
+
+////////////////////////////////////////////////////////////
+//// Me puedo comprar un coche ??/////////////////////////// 
+////////////////////////////////////////////////////////////
+
+var precioCoche=6000;
+var dineroAhorrado=prompt("Introduce cuanto dinero tienes ahorrado");
+var edad=prompt("Introduce tu edad, por favor");
+if(dineroAhorrado>=precioCoche && edad>=18){
+    alert("Puedes comprar el coche");
+}else{
+    alert("No puedes comprar el coche");}
+
+//////////////////////////////////////////////////
+/////// Cambiar color de fondo ///////////////////
+
+var cuerpo=document.getElementById("cuerpo");
+var colorWeb=prompt("Intorduce el color de fondo. Azul/Verde/Rojo");
+if(colorWeb=="Azul"){
+  cuerpo.style.backgroundColor="blue";
+}else if(colorWeb=="Verde"){
+  cuerpo.style.backgroundColor="green";
+}else if(colorWeb=="Rojo"){
+  cuerpo.style.backgroundColor="red";
+}else{
+  alert ("Este color no esta disponible");
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////// Cambiar color de fondo Utilizando toLowerCase();toUpperCase();  /////////////////
+
+  var cuerpo=document.getElementById("cuerpo");
+  var colorWeb=prompt("Intorduce el color de fondo. Verde/Azul/Rojo").toLowerCase();
+  
+  if(colorWeb!="verde" && colorWeb!="azul" && colorWeb!="rojo"){ 
+    
+    alert("Este color no esta disponible");
+  }else if(colorWeb=="verde"){
+    cuerpo.style.backgroundColor="green";
+  }else if(colorWeb=="azul"){
+    cuerpo.style.backgroundColor="blue";
+  }else {
+    cuerpo.style.backgroundColor="red";}
+
+/////////////////////////////////////////////////
+////// Calculadora  /////////////////////////////
+
+var num1=prompt("Introduce el primer numero");
+   
+   //if(isNaN(num1)){
+     //alert("No ha introducido un numero");
+    //}else 
+    if(typeof(num1)=="string"){
+      alert("Ha introducido texto");
+    }else{
+         var num2=prompt("Introduce el segundo numero");
+         if(isNaN(num2)){
+           alert("No ha introducido un numero");
+          }else{
+             var operacion=prompt("¿Que operacion desea realizar? suma/resta/multiplicacion/division");
+             var num11=parseInt(num1);
+             var num22=parseInt(num2);
+             if(operacion=="suma"){
+                alert(num11+num22);
+              }else if(operacion=="resta"){
+                alert(num1-num2);
+              }else if(operacion=="multiplicacion"){
+                alert(num1*num2);
+              }
+              else if(operacion=="division"){
+                alert(num1/num2);
+              }else{
+                alert("Esta operacion no esposible");
+              }}}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////  Mostrar array con While /////////////////////////////////////////////////////////////////////////////////////////////
+
+var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+var contador=0;
+while(contador<meses.length){
+  document.write(meses[contador] + " ");
+  contador++;
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////// Condiciones While ///////// isNaN=IfIsNotaNumber ////////////////////////////////////////////////////////
+
+var nombre, edad, poblacion;
+nombre=prompt("Introduce tu nombre");
+edad=prompt("Intoduce edad");
+while(edad<=0 || edad>105 || isNaN(edad)){
+    edad=prompt("Introduce una edad válida");}
+poblacion=prompt("Introduce poblacion");
+
+///////////// Condiciones While ///////// isNaN=IfIsNotaNumber ///////////////////////////////////////////////////////
+
+var nombre, edad, poblacion;
+
+nombre=prompt("Introduce tu nombre");
+  while(!isNaN(nombre)){
+    nombre=prompt("Introduce un nombre válido");}
+
+edad=prompt("Intoduce edad");
+  while(edad<=0 || edad>105 || isNaN(edad)){
+   edad=prompt("Introduce una edad válida");}
+
+poblacion=prompt("Introduce poblacion");
+  while(!isNaN(poblacion)){
+   poblacion=prompt("Introduce una poblacion válida");}
+
+
+
+////////////////////////////////////////////////////////////////////
+//////////////////// DO WHILE //////////////////////////////////////
+
+var nombre, edad, poblacion;
+
+ //nombre=prompt("Introduce tu nombre","Introduce tu nombre");
+ do{
+    nombre=prompt("Introduce tu nombre válido");
+  } while(!isNaN(nombre));
+  //edad=prompt("Intoduce edad");
+  do{
+   edad=prompt("Introduce una edad válida");
+  }while(edad<=0 || edad>105 || isNaN(edad));
+ //poblacion=prompt("Introduce poblacion");
+  do{
+   poblacion=prompt("Introduce una poblacion válida");
+  } while(!isNaN(poblacion));
+
+/////////////////////////////////////////////////////////////
+////////////// Juego Adivina Numero Aleatorio  //////////////
+
+var aleatorio=Math.round(Math.random()*100);
+var minum, intentos;
+minum=0;
+intentos=0;
+do{
+  minum=prompt("Introduce un numero entre 0 y 100");
+
+  if(aleatorio>minum){
+    alert("Mas alto");
+  }
+  else if(aleatorio<minum){
+    alert("Mas bajo");
+  }
+  else if(aleatorio=minum){
+    alert("Exito");
+  }
+  intentos++;
+}while(aleatorio!=minum);
+alert("Correcto. Has consumido " + intentos +);}
+
+///////////////////////////////////////////////////////
+/////////////////// v.2.0 /////////////////////////////
+
+var aleatorio=Math.round(Math.random()*100);
+ var minum, intentos;
+minum=0;
+intentos=0;
+var mensaje=document.getElementById("c_mensaje");
+var intentos_consumidos=document.getElementById("c_intentos");
+do{
+  minum=prompt("Introduce un numero entre 0 y 100");
+
+  if(aleatorio>minum){
+    mensaje.value="Mas alto";
+    mensaje.style.textAlign="center";
+    mensaje.style.fontSize="18px";
+  }
+  else if(aleatorio<minum){
+    mensaje.value="Mas bajo";
+    mensaje.style.textAlign="center";
+    mensaje.style.fontSize="18px";
+  }
+  intentos++;
+  intentos_consumidos.value=intentos;
+  intentos_consumidos.style.fontSize="18px";
+  intentos_consumidos.style.textAlign="center";
+}while(aleatorio!=minum);
+
+mensaje.value="Correcto!";
+mensaje.style.textAlign="center";
+mensaje.style.fontSize="18px";
+intentos_consumidos.value=intentos + " intentos";
+
+
+//////////////////////////////////////////////////////////
+/////////////   Recorrer Arrays con Bucle For ////////////
+//   Video 19
+
+var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+for (let index = 0; index<12; index++) {
+document.write(meses[index] + "<br>");
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////   Recorrer Arrays con Bucle For | Sin definir el larg del array //////////////////////////////////////////////////////////////////
+//// Video 20
+
+var Trabajadores=new Array();
+var persona="";
+var contador=0;
+
+while (persona!="salir"){
+  persona=prompt("Introduce trabajador");
+  Trabajadores[contador]=persona;
+  contador++;
+}
+Trabajadores.pop();
+for (let index = 0; index<Trabajadores.length; index++) {
+  document.write(Trabajadores[index] + "<br>");
+}
+
+//////////////////////////////////////////////////////////////////
+///////////// FUNCIONES //////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+//// Funciones predefinidas ///////
+
+      var nombre="Cristian";
+      alert(nombre)
+
+/////////////////////// Funciones creadas //////////////////
+
+  var $nombre="Cristian";
+  var $apellido="J";
+  document.write("<p>");
+  document.write($nombre + " " + $apellido);
+  document.write("</p>")
+
+///////////////////////////
+//// FUNCION DIA DE HOY ///
+
+function dia_de_hoy(){
+var hoy=new Date();
+document.write(hoy.toDateString());}
+
+
+<body id="cuerpo">
+  <h1><strong>¿Que dia es hoy?</strong></h1>
+  <h2>Hoy es dia: <script> dia_de_hoy();</script></h2>
+
+//////////////////////////////////////////////////////////
+///////// FUNCION ESCRIBE NOMBRE || PARAMETRO 1 ||///////////////////////////
+
+function escribe_nombre(nombre){
+  document.write(nombre);}
+var el_nombre=prompt("Introduce tu nombre");
+// <p style="font-size:24px; font-weight:bold">Hola:<script>escribe_nombre(el_nombre)</script></p>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////  Calculadora /////////////////////////////////////////////////////
+
+var repetir="si";
+  
+function suma (num1,num2){
+  alert("La suma es : " + (num1+num2));}
+function resta (num1,num2){
+  alert("La resta es : " + (num1-num2));}
+function multiplicar (num1,num2){
+  alert("La multiplicacion es : " + (num1*num2));}
+function dividir (num1,num2){
+  alert("La suma es : " + (num1/num2));}
+do{
+var operacion=prompt("Que operación desea realizar?");
+var operador1=parseInt(prompt("Inroduce el primer numero"));//  parse Int pasar a numero
+var operador2=parseInt(prompt("Introduce el segundo numero"));
+if(operacion=="sumar"){
+suma(operador1,operador2);
+}else if(operacion=="restar"){
+resta(operador1,operador2);
+}else if(operacion=="multiplicar"){
+multiplicar(operador1,operador2);
+}else if(operacion=="dividir"){
+dividir(operador1,operador2);
+}else{
+alert("Operacion no contemplada");
+}
+repetir=prompt("Quiere repetir??");
+}while(repetir=="si");
+
+
+
+//////////////////////////////////////////////////////////
+//////// EVENTOS  -> ///-> que desencadenan acciones ////////////////
+//////////////////////////////////////////////////////////
+
+
+// Cuando realizamos la accion que le asignamos se produce el evento
+
+////// Eventos de raton
+
+
+// onblur -> Deseleccionar elemento -> button , input, label, select, textarea.
+
+// onchange -> Deseleccionar elemento  -> input, select ,textarea,
+          //   que se ha modificado
+
+//onclick -> Pinchar y soltar el raton -> Todos
+
+//ondblclick -> Pinchar dos veces seguidas con el raton -> Todos
+
+//onfocus -> Seleccionar elemento -> button , input, select , textarea
+
+//onkeydown -> Pulsar una tecla sin soltar -> Elementos de formulario y body
+//onkeypress -> Pulsa una tecla -> Elementos de formulario y body
+//onkeyup -> Soltar una tecla uplsada -> =
+
+//onload -> La pagina se ha cargado -> bosy
+//onmousedown -> Pulsar sin soltar un boton del raton -> Todos
+//onmousemove -> Mover el raton
+//onmouseout -> El raton "sale" del elemento ( pasa por encima de otro elemento)
+//onmouseover -> El raton "entra" en el elemento ( pasa por encima del elemento)
+//onmouseup -> Soltar boton que estaba pulsado 
+//onreset -> Inicializar formulario ( Borrar todos sus datos) -> form
+//onresize -> Se ha modificado el tamaño de la ventana del navegador -> body
+
+// Eventos de  teclado -> keypress , keydown    
+
+// Eventos de coumento o ventana
+// load  // resize  // scroll   // unload
+
+// Eventos de formulario
+// sumbit  // reset  // change  //focus  //blur  
+
+////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////    EVENTOS    /////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+/*
+function aviso(){
+  alert ("way");
+}
+
+//img src="arbol.jpg" width="400" height="300" onClick="aviso()">
+
+
+///////////////////////////////////////////////////////////////////////
+///////////  CALCULADORA 1 ////////////////////////////////////////////////////////////
+/*
+
+<script>
+
+var cifra="";
+var acumulado=0;
+var poperacion=true;//Primera operacion
+var sumar=false;// Variables que le indican a las funciones si estamos sumando o restando
+var restar=false;
+
+                    // Parametro variable qu le pasa el numero pulsado
+function display_numeros(numero){ // Mostrar en "Pantalla" los numeros pulsados 
+                              // Imprimir en pantalla numero (numero pulsado)
+  document.getElementById("display").value=cifra+numero; // Acceder al valor del atributo id display identificarlo y modificarlo.|| POO ||
+ //Concadenar numeros en pantalla
+ //Asignar a cifra lo que haya en pantalla
+  cifra=document.getElementById("display").value;
+}
+
+function suma(){ 
+
+  if(restar){
+    acumulado=acumulado-parseInt(cifra);
+    document.getElementById("display").value=acumulado;
+  }else{
+  // Sumar a acumulado=0 + cifra (lo que habia en pantalla).
+  acumulado=acumulado+parseInt(cifra);
+  //Mostra en pantalla acumulado (resultado)
+  document.getElementById("display").value=acumulado;
+  }
+
+  cifra="";     // Resetear variables
+  sumar=true;
+  restar=false;
+  poperacion=false;
+}
+/* 
+function resta(){
+
+ document.getElementById("display").value=parseInt(cifra);
+
+ if(poperacion==false){ // Si no es la primera operacion que haecmos
+    
+    if(sumar){ // Si lo que estamos haciendo es sumar a acumulado sumale cifra(lo que hay en pantalla)
+      acumulado=acumulado+parseInt(cifra);
+      document.getElementById("display").value=acumulado;
+    }else{ // Si lo ultimo que hemos hecho no es sumar, resta cifra (lo que hay en pantalla) a acumulado.
+     acumulado=acumulado-parseInt(cifra);
+     document.getElementById("display").value=acumulado;
+    }
+  }else{// Si es la primera operacion que hacemos
+    acumulado=parseInt(cifra);
+    poperacion=false;
+  }
+   cifra=""; // Resetear cifra
+   sumar=false;
+   restar=true;
+  }
+
+function resultado(){ //Funcion igual
+  if(sumar==true){     // Condicional ,,,,Si el ultimo operador pulsado es + , muestra en pantalla (acumulado + el numero que haya en pantalla).
+  document.getElementById("display").value=acumulado+parseInt(cifra);
+  }else if(restar==true){// Condicional ,,,,Si el ultimo operador pulsado es - , muestra en pantalla (acumulado - el numero que haya en pantalla).
+  document.getElementById("display").value=acumulado-parseInt(cifra);
+  }
+  acumulado=parseInt(document.getElementById("display").value);//Almacenar numeros en pantalla
+  cifra="";
+  //sumar=false;
+  //restar=false;
+                                                                          <!--  Llamadas a eventos ( onClick )  --> 
+td width="26%"><input name="button" type="button" class="numero" id="button" value="+" onClick="suma()"
+
+///////////////////////////////////////////////////////////
+////                                                  /////
+////              Calculadora 2                       /////
+///////////////////////////////////////////////////////////
+
+
+	var operacion = "(";
+	function operar(valor){ // Pasar parametro (valor) 
+		if(parseFloat(valor) || valor=="0" || valor=="."){// Si valor es un decimal, 0 o un .
+			operacion += valor;                          // Concadenar operacion con valor 
+		}else{                                           // SINO
+			operacion += ")"+valor;                      // Meterlo entre parentesis
+			operacion = "("+operacion;
+		}                                                // "Imprimir en pantalla la operacion" , Escribir en el textarea de operaciones la operacion
+		document.getElementById("display").value = operacion;
+	}
+	
+	function resultado(){
+		operacion+=")";                 // Cerrar la operacion concadenando otro parentesis
+		console.log(operacion);         // Mandar la operacion a la consola
+		var resultado = eval(operacion);// Declarar variable resultado y asignarle la evaluacion de la operacion
+		document.getElementById("display_resultado").value = resultado;// Imprimir resultado en pantalla resultados
+		operacion = "("+resultado;      // Preparar nueva operacion con el resultado	
+	}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////// J QUERY  J QUERY  J QUERY  J QUERY  J QUERY  J QUERY  J QUERY  J QUERY  J QUERY  J QUERY  J QUERY  J QUERY  ////////////
+
+LIBRERIAS JAVASCRIPT
+
+Ayuda en tareas frecuentes como :
+
+Seleccionar elementos , Agregar nuevo contenido, Ocultar y Mostrar elementos de una web,  
+Validacion de Formularios , Efectos visuales vistosos.
+
+Prototype 
+Mootools
+Dojo
+Yahoo User Interface
+
+J query
+
+Ampliamente testeada
+Gratis
+Gran comunidad de Soporte
+Muchos plugins que realizan las tareas mas frecuentes
+Loops automaticos
+Funciones encadenadas
+
+//////////////////////////////////////////////////////////////////
+Ejemplo
+/////////////////////////////////////////////////////////////////////////
+// links
+// https://www.youtube.com/watch?v=VEJZFbjOICs&list=PLU8oAlHdN5BmpobVmj1IlneKlVLJ84TID&index=29
+// https://developers.google.com/speed/libraries#jquery
+// <link rel="StyleSheet" href="js.css" type="text/css"/>
+////////////////////////////////////////////////////////////////////////////
+
+// <link href="css/micss.css" rel="stylesheet">
+// <!-- <script src="ejemple.js"></script>
+
+//<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+// <script src="Jquery/jquery-1.6.3.min.js"></script>  // LIBRERIA JQUERY
+
+// <script>//Despues de css
+// $(document).ready(function(){ //Espera a que la libreria cargue
+   // aqui va el codigo
+   // $("body").hide().fadeIn(12000);
+// });
+
+/////////////////////////////////////////////////////////
+
+DOM ---> Document Object Model
+
+<script> // Almacenar las imagenes en imagen (Array)
+   var imagenes=document.querySelectorAll("#carrete img");
+   for (var i = 0; i < imagenes.length; i++) {
+      imagenes[i].style.visibility="hidden";  // Oculta elementos ( array imagenes)
+   }
+   </script>
+
+// <script> // Despues de css
+// $(document).ready(function(){ // Espera a que la libreria cargue
+   // aqui va el codigo
+   // $("body").hide();
+// });
+// </script>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+////        J QUERY      FUNCIONES FUNDAMENTALES   QUE AGREGAN TEXTO                                /////
+ .html()  ,  .text()  , .after()  ,  .append()  , .prepend()  ,  .before()  ,
+
+ $(document).ready(function(){ 
+  // $("#errores").html("<p>Hay Horrores en el formulario</p>"); Sustituye un texto por otro    
+  // $("#errores").prepend("<p>Hay PREPEND HorroresS en el formulario</p>"); Añade texto al principio
+  // $("#errores").append("<p>Hay  APPEND errores en el formulario</p>"); Añade texto al principio
+  });  
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Validar formularios
+  function validar(){
+    var nusuario=document.getElementById("usuario").value;
+    if(nusuario==""){
+          // Si usuario es igual a (( cadena vacia ))   ))
+      $("#usuario").after("Rellena este campo"); // Imprimr "Rellena.." despues del selector css id usuario
+    }else{  // Y sino..Imprimr "campo.."
+     $("#usuario").after("campo rellenado");
+     }
+ }
+////////////////////////   Cerran Banner  ///////////////////////////////////////////////////////////////////////
+     $(document).ready(function(){
+       var z=document.getElementById("cerrar");
+       z.addEventListener("click", cerrar_banner, false);
+      });
+      function cerrar_banner(){
+        $("#banner").remove(); // FUNCION JQUERY que elimina un elemento
+      }
+  ////////////////////////////////////////////////////////////////////////////
+  $(document).ready(function(){    
+    document.getElementById("cerrar").addEventListener("click", cerrar_banner, false);
+  });
+  function cerrar_banner(){
+    $("#banner").remove();
+  }
+  /////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// Funcion QuerySelectorAll
+
+//  Seleccionar todos los elementos de la web en un array , en base a su etiqueta     
+// Almacenar un array   
+var imagenes=document.querySelectorAll("#carrete img");
+          //Almacena
+// imagenes[0]=imegen1
+// imagenes[2]=imagen2 etc..
+
+/////////////////////////////////////
+////////////////////////////////////////
+
+     $(document).ready(function(){
+
+      var imagenes=document.querySelectorAll("#carrete img");
+      for (let index = 0; index < imagenes.length; index++) {
+        imagenes[index].addEventListener("click",carrito, false);
+      }
+      });
+      function cerrar_banner(){
+        $("#banner").remove();
+      }
+      function carrito(num){
+        if(num.target==imagen1){
+            $("#imagen1").replaceWith("<div id='imagen1'>Agregado al carro</div>");
+         }else if(num.target==imagen2){
+            $("#imagen2").replaceWith("<div id='imagen2'>Agregado al carro</div>");
+         }else if(num.target==imagen3){
+            $("#imagen3").replaceWith("<div id='imagen3'>Agregado al carro</div>");
+         }else if(num.target==imagen4){
+            $("#imagen4").replaceWith("<div id='imagen4'>Agregado al carro</div>");
+         }
+      }
+//<div id="carrete">
+   //</div><img src="imgs/arbol.jpg" id="imagen1">
+   //<img src="imgs/arbol.jpg" id="imagen2">
+   //</img><img src="imgs/arbol.jpg" id="imagen3">
+  //</img></img> <img src="imgs/arbol.jpg" id="imagen4">
+//</div>
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
+///////   Cambiando atributos css   ///////////////////////////////////////////////////
+
+ addClass() + removeClass()
+      toggleclass()
+
+      $(document).ready(function(){
+       // $("a").addClass("linkdestacacursos");
+       // ("a"[href^='//https']")
+        document.getElementById("cursos").addEventListener("click",resaltacursos,false);
+        document.getElementById("info").addEventListener("click",resaltaejemplos,false);
+     });
+      function resaltacursos(){
+         //$(".info").removeClass("linkdestacaejemplos");
+     // $(".cursos").addClass("linkdestacacursos");
+     $(".cursos").toggleClass("linkdestacacursos");}
+      }
+      function resaltaejemplos(){
+        $(".cursos").removeClass("linkdestacacursos");
+        $(".info").addClass("linkdestacaejemplos");
+        $(".info").toggleClass("linkdestacaejemplos");}
+    
+        $(document).ready(function(){
+          // Capturar valor propiedad                de elemento #acheuno 
+   // var colorFondo=$("#acheuno").css("background-color");
+ 
+ //Modificar valor propiedad                de #acheuno 
+  // $("#acheuno").css("background-color","green");
+    $("ul").css("border","5px dotted black");
+ });
+
+////////////////
+
+$(document).ready(function(){
+         document.getElementById("aumenta1").addEventListener("click",aumentar,false);
+         document.getElementById("disminuye1").addEventListener("click",disminuir,false);
+});
+
+function aumentar(){
+
+   var tamDefecto=$("#textarea").css("font-size");
+ //alert(tamDefecto); 
+   tamDefecto=parseInt(tamDefecto);
+   $("#textarea").css("font-size", tamDefecto*1.1);
+}
+
+function disminuir(){
+
+  var tamDefecto=$("#textarea").css("font-size");
+   //alert(tamDefecto); 
+   tamDefecto=parseFloat(tamDefecto);
+    $("#textarea").css("font-size", tamDefecto*0.9);
+ }
+
+/////////// Video 38  ///////////////////////////////////////////////////////////////////////////////////////
+
+
+$(document).ready(function(){
+
+  var botones=document.querySelectorAll("input");
+    for (let index = 0; index < botones.length; index++) {
+         botones[index].addEventListener("click",aumentar,false);
+         botones[index].addEventListener("click",disminuir,false);
+     }
+});
+
+function aumentar(e){
+   var zonaActuacion;
+   // Propiedad target Mira a ver si el objeto que ha desencadenado el evento es ->
+   // Si parametro recibido ("e") es igual a ("aumenta1")
+   if(e.target==aumenta1){
+     zonaActuacion="#uno";
+   }else if(e.target==aumenta2){
+     zonaActuacion="#dos";
+   }
+    var tamDefecto=$(zonaActuacion).css("font-size");
+   //alert(tamDefecto); 
+   tamDefecto=parseInt(tamDefecto);
+   $(zonaActuacion).css("font-size", tamDefecto*1.1);
+}
+
+function disminuir(e){
+  var zonaActuacion;
+  if(e.target==disminuye1){
+     zonaActuacion="#uno";
+  }else if(e.target==disminuye2){
+     zonaActuacion="#dos";
+  }
+  var tamDefecto=$(zonaActuacion).css("font-size");
+  //alert(tamDefecto);
+  tamDefecto=parseInt(tamDefecto);
+  $(zonaActuacion).css("font-size", tamDefecto*0.9);
+}
+///////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
+
+$(document).ready(function(){
+  //document.getElementById("img1").addEventListener("mouseover",cambiar ,false);
+  //document.getElementById("img1").addEventListener("mouseout",restaurar ,false);
+
+  var elemento=document.querySelectorAll("img");
+  for (let index = 0; index < elemento.length; index++) {
+      elemento[index].addEventListener("mouseover", cambiar, false);
+      elemento[index].addEventListener("mouseout", restaurar, false);
+  }
+
+});
+
+function cambiar(e){
+
+  //$("img").attr("src","imgs/saitama_puño.gif");
+  if(e.target==img1){
+   $("#img1").attr("src","imgs/saitama_puño.gif");
+  }else if(e.target==img2){
+      $("#img2").attr("src","imgs/gokuultra.gif");
+  }else if(e.target==img3){
+      $("#img3").attr("src","imgs/naruto_trans.gif");
+  }else if(e.target==img4){
+      $("#img4").attr("src","imgs/luffy_trans.gif");
+  }else if(e.target==img5){
+      $("#img5").attr("src","imgs/death_note1.gif");
+  }else if(e.target==img6){
+      $("#img6").attr("src","imgs/ataketitanes2.gif");
+  }
+}
+
+function restaurar(e){
+
+  if(e.target==img1){
+    $("#img1").attr("src","imgs/saitama.gif");
+  }else if(e.target==img2){
+      $("#img2").attr("src","imgs/goku.gif");
+  }else if(e.target==img3){
+      $("#img3").attr("src","imgs/naruto_flipando.gif");
+  }else if(e.target==img4){
+      $("#img4").attr("src","imgs/luffy_peque.gif");
+  }else if(e.target==img5){
+      $("#img5").attr("src","imgs/death_note.gif");
+  }else if(e.target==img6){
+      $("#img6").attr("src","imgs/ataketitanes.gif");
+  }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+$(document).ready(function(){
+	
+  var elementos=document.querySelectorAll("li");
+
+  for (var index = 0; index < elementos.length; index++) {
+  elementos[index].addEventListener("mouseover", pon_imagen,false);
+  elementos[index].addEventListener("mouseout", quita_imagen,false);
+  } 
+
+
+});
+
+function pon_imagen(e){
+
+    if(e.target==elem1){
+
+   $("#elem1").addClass("destacar");
+       $("img").attr("src","imgs/goku.gif");
+
+
+    }else if(e.target==elem2){
+
+     $("#elem2").addClass("destacar");
+   $("img").attr("src","imgs/naruto_flipando.gif");
+
+    }else if(e.target==elem3){
+
+     $("#elem3").addClass("destacar");
+     $("img").attr("src","imgs/luffy_peque.gif");
+
+      }else if(e.target==elem4){
+   $("#elem4").addClass("destacar");
+   $("img").attr("src","imgs/ataketitanes.gif");
+    }
+}
+
+function quita_imagen(e){
+  
+  if(e.target==elem1){
+    
+    $("#elem1").removeClass("destacar");
+    $("img").removeAttr("src");
+
+  }else if(e.target==elem2){
+    
+    $("#elem2").removeClass("destacar");
+    $("img").removeAttr("src");
+
+  }else if(e.target==elem3){
+    
+    $("#elem3").removeClass("destacar");
+    $("img").removeAttr("src");
+
+  }else if(e.target==elem4){
+    
+    $("#elem4").removeClass("destacar");
+    $("img").removeAttr("src");
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////  EACH  /////////////////////////////////////////////////////////// Video  41 ///////////////////////////////////////////////////////////////////////////////////////////////////////
+// Funciones Anonimas 1.No tienen nombre  2. No se las puede llamar de manera normal, se ejecutan cuando aparecen, por lo que sulen utilizarse como argumento / parametro de otra funcion
+
+$(document).ready(function(){
+	
+  document.getElementById("miboton").addEventListener("click", cambiar, false);
+
+});
+
+function cambiar(){
+
+//	 $("img").fadeOut(1000).fadeIn(1000).width("310");
+
+  $("img").each(function(){
+
+    $(this).fadeOut(1000).fadeIn(1000).width("310");
+
+  });
+
+/**/
+/////////////////////////////////////////////////////////////////////////////////////////////////////////</script></script>
+
+// Recorre  en bucle todas las etiquetas a href y las almacena en linkExterno
+
+	$(document).ready(function(){
+     $("a[href]^='https://'").each(function(){
+		 //selector css
+		 var linkExterno=$(this).attr("href");//Selecciona href
+		 $("#links").append("<li>" + linkExterno + "</li>");
+        // Apuntar acontenedor links y añadirle al final linkExterno 
+	 });
+	});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Video 42 
+
+// $("img").click(funcion_a_ejecutar);
+/*
+$("img").click(aviso);
+function aviso(params){
+//  alert("Has pulsado la imagen");
+} */
+
+/////////////////////////////////////
+
+/*  Funcion Anonima
+
+$("img").click(funtion(){   
+ // alert("Has pulsado la imagen");
+});*/
+
+////////////////////////////////////////////////////////////////////////
+
+
+$(document).ready(function(){
+  // Apuntar a toda la pagina y cuando hagas dobleclick
+    $("html").dblclick(function(){  
+      alert("Hola");  // Sale ventana "Hola"
+    });
+  
+    $("a").mouseover(function(){
+      var mensaje="<p> Estas pasando el raton por encima del link</p>";
+      $("#principal").append(mensaje);// Añadir al final de #principal mensaje
+    });
+  
+    $("#el_boton").click(function(){ // Cambia el texto del boton 1 vez cuando lo pulsas 
+      $(this).val("Para de hacer click");  // Cambiar value
+          
+  
+    });
+
+    $("#el_campo").focus(function(){
+      $(this).val("Ahora vas a escribir");
+    });
+    
+  });
+
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+// Video 43 Funciones hove() y toogle()
+
+
+$(document).ready(function(){
+  // Identificamos elemento y le damos la funcion ocultar()
+    $("#mensaje_img1").hide();
+    $("#imagen1").hover(mensaje_on, mensaje_off);
+  });
+  
+  function mensaje_on(){
+  // identificar y mostrar
+    $("#mensaje_img1").show();
+  }
+  
+  function mensaje_off(){
+  // identificar y ocultar
+    $("#mensaje_img1").hide();
+  }
+  
+
+
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+
+
+
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Selector CSS3 querySelector() querySlectorall()devuelve array ordenado*/
+
+function ejecuta(){
+
+    document.querySelector(".pes").onclick=saludo;
+}
+
+function saludo(){
+    alert('HOLA');
+}
+
+window.onload=ejecuta;
+
+
+function ejecuta(){
+1.
+for (var i=0;i<6;i++){
+
+document.getElementsByTagName("figure")[i].onclick=saludo;
+      getElementById
+         getElementByClass
+
+}
+2.
+for (var i=0;i<6;i++){var elementos=document.querySelectorAll("#pes p").onclick=saludo;
+elementos[i].onclick=saludo;
+
+3.
+var elementos=document.querySelectorAll("#pes p").onclick=saludo;
+for (var i=0;i<elementos.length;i++)
+
+
+alert('HOLA');
+}
+
+4.(mas de un manejador)
+
+var imagen;
+
+function manejarflor(){
+
+    imagen=document.getElementsByTagName("img")[];
+
+    imagen.addEvenListener("mouseover",crecer,false);
+    imagen.addEvenListener("mouseover",menguar,false);
+    imagen.addEvenListener("onclick",nombre_flor,false);
+}
+function crecer(){
+    imagen width:250;
+    imagen height:250;
+}
+function menguar(){
+    imagen width:200;
+    imagen height:200;
+}
+function nombre_flor(){
+   alert=("Nombre de la flor")
+}
+
+5. (Funcion Anonima)
+
+function manejarflor(){
+
+    for (var i=0;i<6;i++){
+        
+    imagen[i]=document.getElementsByTagName("img")[i];
+
+    imagen[0].addEvenListener("mouseover",function()imagen.[0]width:200.imagen.[0]height:200;,false);
+    imagen[0].addEvenListener("mouseover",function()imagen.[0]width:200.imagen.[0]height:200;,false);
+    imagen[0].addEvenListener("onclick",nombre_flor,false;
+
+    imagen[1].addEvenListener("mouseover",function()imagen.[1]width:200.imagen.[1]height:200;,false);
+    imagen[1].addEvenListener("mouseover",function()imagen.[1]width:200.imagen.[1]height:200;,false);
+    imagen[1].addEvenListener("onclick",nombre_flor,false);
+
+
+    imagen[2].addEvenListener("mouseover",function()imagen.[2]width:200.imagen.[2]height:200;,false);
+    imagen[2].addEvenListener("mouseover",function()imagen.[2]width:200.imagen.[2]height:200;,false);
+    imagen[2].addEvenListener("onclick", nombre_flor,false);
+
+}
+
+6.
+
+function loseventos(){
+
+    var elemento=document.getElementsByTagName("p")[0];
+    var elemento2=document.getElementsByTagName("img")[0];
+
+    elemento.addEventListener("click" , aviso 1, false); 
+    elemento2.addEventListener("click" , aviso 2, false);(cambiar false a true para cambiar preferencia de ejecucion)
+}
+
+functionaviso1(){
+    alert("Hola, elemento 1");
+}
+
+functionaviso2(){
+    alert("Hola, elemento 2");
+}
+window.addEvenListener("load",los eventos, false);
+
+
+/////////////////////////////////////
+//////////////////////////////////////
+// Cosas que hacer :
+
+
+// BUSCAR INFO DE DOCKER INSTALAR
+// https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
