@@ -3,7 +3,7 @@
 https://www.youtube.com/watch?v=z95mZVUcJ-E&t=27145s
 https://github.com/soydalto/curso-de-javascript/tree/main/capitulo%201/problema%201
 
- ---------- CAPITULO 1 ----------
+ ---------- CAPITULO 0 ----------
  Lenguaje de programación: Herramienta que nos permite darle instrucciones a un ordenador.
  
  Tipos de lenguajes:
@@ -36,10 +36,25 @@ https://github.com/soydalto/curso-de-javascript/tree/main/capitulo%201/problema%
   
   · Por nivel: Alto   Bajo
   
- Introducción a javascript
- Editor de texto
+   ---------- CAPITULO 1 ----------
+  
+ Javascript
+ 
+ Introduccion
+ Javascript es un lenguajes de programación interpretado, orientado a objetos, imperativo (va linea por linea), Case sensitive, basado en protoipos-instancias-classless, de tipado débil,
+                  lenguaje dinámico (la variable se adapta al dato).
+
+
  Usos de javascript
- Formas de incluir javascript
+  ·
+  ·
+  ·
+  ·
+  
+  Otros usos menos comunes
+
+
+Formas de incluir javascript
  Todo sobre variables
  Pedir datos con prompt
  Operadores en javascript (Básico) 
