@@ -190,6 +190,8 @@ Editor de texto
                                                                                          };
    
  - Bucles e iteración (While, For, etc...)
+   Como en los condicionales, si la condicion se cumple se ejecuta, pero al terminar de ejecutarse vuelve a mirar si la condicion es verdadera, si lo es lo vuelve
+                              a ejecutar.
  - Funciones
  - Historia de Cofla 2 (Crear soluciones)
  
