@@ -177,9 +177,18 @@ Editor de texto
  - Array 
    Es una colección o agrupación de elementos en una misma variable,
    cada uno de ellos ubicado con referencia a la posición que ocupa dentro del mismo.
-   Tanto la longitud como el tipo de los elementos de un array son variables.["Cristian", 30,"Ciudadela"]
+   Tanto la longitud como el tipo de los elementos de un array son variables.  EJ: let usr = ["Cristian", 30,"Ciudadela"] ; document.write(usr) o
+                                                                                                                            document.write(usr[0]) --> Cristian
    
  - Arrays Asociativos (Objetos)
+   Un array asociativo es aquel en el que cada elemento no está asociado a su posición numérica dentro del array, 
+   sino que está asociado a otro valor específico.                       EJ: let pc = {                        let nombre = pc1["nombre"];
+                                                                                         nombre: "MiPc",       let procesador = pc1["procesador"];
+                                                                                         procesadro: "I-7",    let nombre = pc1["nombre"];
+                                                                                         ram: "4GB",           let nombre = pc1["nombre"];
+                                                                                         espacio: "1TB"        frase = `El nombre de mi PC es: <b>${nombre}`;
+                                                                                         };
+   
  - Bucles e iteración (While, For, etc...)
  - Funciones
  - Historia de Cofla 2 (Crear soluciones)
