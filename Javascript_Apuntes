@@ -4,8 +4,38 @@ https://www.youtube.com/watch?v=z95mZVUcJ-E&t=27145s
 https://github.com/soydalto/curso-de-javascript/tree/main/capitulo%201/problema%201
 
  ---------- CAPITULO 1 ----------
+ Lenguaje de programación: Herramienta que nos permite darle instrucciones a un ordenador.
  
- Apertura del capitulo 1
+ Tipos de lenguajes:
+ · Compilados: Compliador(programa que procesa un codigo en ingles y lo traduce a codigo de maquina).
+               Ejemplos: C# , c++ , Go.
+ 
+ · Interpretados: Interprete (programa que procesa un codigo en ingles y lo traduce a codigo de maquina).
+     Diferencia con compilador, lo traduce en tiempo de ejecucion.
+     Ventaja, para el programador es mas facil, ya que no lo tiene que compilar.
+     Desventaja, es mas lento.
+     Ejemplos: - Javascript  - Php   - Python  - Ruby
+     
+  · Intermedio : El programador lo compila a bytecode (no codigo maquina) y despues se interpreta.
+                 Permite ser interpretado en cualquier s.o. mientras tenga la maquina virtual de Java instalado.
+            
+  · JVM Java Virtual Machine : -Kotlin  -  Scala
+  
+  · Declarativo
+  · Imperativo
+  
+  · Paradigma : - Multi-paradigma  - POO      - Funcionales  - Rectiva
+                  Javascript         Java       Haskell        RX
+                  Python             Kotlin     Elixir
+                  Php                C++        Erlang
+                                     
+                                     
+                                     
+  · De proposito general Java C C# Python
+  · De proposito especifico (DSL) : SQL , HTML , CSS , Logo
+  
+  · Por nivel: Alto   Bajo
+  
  Introducción a javascript
  Editor de texto
  Usos de javascript
