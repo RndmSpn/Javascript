@@ -1,0 +1,155 @@
+ /* CURSO JAVASCRIPT (DE SOY DALTO) ***** DE 0 A JUNIOR 
+ 
+https://www.youtube.com/watch?v=z95mZVUcJ-E&t=27145s
+https://github.com/soydalto/curso-de-javascript/tree/main/capitulo%201/problema%201
+
+ ---------- CAPITULO 0 ----------
+ Lenguaje de programación: Herramienta que nos permite darle instrucciones a un ordenador.
+ 
+ Tipos de lenguajes:
+ · Compilados: Compliador(programa que procesa un codigo en ingles y lo traduce a codigo de maquina).
+               Ejemplos: C# , c++ , Go.
+ 
+ · Interpretados: Interprete (programa que procesa un codigo en ingles y lo traduce a codigo de maquina).
+     Diferencia con compilador, lo traduce en tiempo de ejecucion.
+     Ventaja, para el programador es mas facil, ya que no lo tiene que compilar.
+     Desventaja, es mas lento.
+     Ejemplos: - Javascript  - Php   - Python  - Ruby
+     
+  · Intermedio : El programador lo compila a bytecode (no codigo maquina) y despues se interpreta.
+                 Permite ser interpretado en cualquier s.o. mientras tenga la maquina virtual de Java instalado.
+            
+  · JVM Java Virtual Machine : -Kotlin  -  Scala
+  
+  · Declarativo
+  · Imperativo
+  
+  · Paradigma : - Multi-paradigma  - POO      - Funcionales  - Rectiva
+                  Javascript         Java       Haskell        RX
+                  Python             Kotlin     Elixir
+                  Php                C++        Erlang
+                                     
+                                     
+                                     
+  · De proposito general Java C C# Python
+  · De proposito especifico (DSL) : SQL , HTML , CSS , Logo
+  
+  · Por nivel: Alto   Bajo
+  
+   ---------- CAPITULO 1 ----------
+  
+ Javascript
+ 
+ Introduccion
+ 
+ Javascript es un lenguajes de programación interpretado, orientado a objetos, imperativo (va linea por linea), Case sensitive, basado en protoipos-instancias-classless, de tipado débil,
+                  lenguaje dinámico (la variable se adapta al dato).
+                  Esta construido sobre ECMASCRIPT
+
+
+ Usos de javascript
+  · Dinamismo de sitios webs
+  · Servidor en NodeJS ( Backend )
+  · Tecnologias Frontend como Angular,, ReACT O Vue.JS
+  
+  Otros usos menos comunes
+  · Inteligencia artificial
+  · Placas electrónicas ( Jhonny Five)
+  · Mobile Apps
+  · Desktop Apps
+  
+  
+ Formas de enlazar javascript 
+ · En linea 
+ · Como contenido en la etiqueta <script>
+ · Como contenido en un archivo de format.js
+ · Con un require
+ 
+ Todo sobre variables
+ 
+ Variable: Espacio que guardamos en memoria.
+ 
+ Tipos de Datos : String = "" '' ``  , Number, Boolean = true o false.        Casos especiales de datos: Undefined , Null, NaN.
+ 
+ Declarar variables var = alcance global 
+                    let = limita el alcance(scope) al bloque en que se ejecuta. 
+                    const = su valor es constante.
+        
+ Hoisting ¿? 
+ 
+ Prompt = Funcion que guarda un dato introducido
+ 
+ Operadores en javascript (Básico) 
+ · Aritmeticos   · Asignación  · Concatenación   · 
+ 
+ Operadores Intermedios -> · Lógicos  · Comparación
+ 
+ Camel Case = declararVariablesAsi
+ 
+ 
+ Condicionales
+
+ If (si la condicion es verdad , se ejecuta){este codigo}
+ Elseif ( si if no se ejecuta, mira si esta condicion se cumple. si se cumple){ejecuta esto}
+ Else ( Si no se ha ejecutado nada ){ haz esto}
+
+ 
+ Historia de Cofla 1 (Crear soluciones)
+ 
+ 
+ ---------  CAPITULO 2  ---------
+ 
+ - Apertura del capitulo 2
+ - Arrays
+ - Arrays Asociativos (Objetos)
+ - Bucles e iteración (While, For, etc...)
+ - Funciones
+ - Historia de Cofla 2 (Crear soluciones)
+ 
+ --------- CAPITULO 3 ----------
+ 
+ - Apertura del capitulo 3
+ - POO (Programación orientada a objetos)
+ - Conceptos básicos de la Programación orientada a objetos
+ - Caracteristicas de la Programación orientada a objetos
+ - Otros conceptos de Programación orientada a objetos
+ - Historia de Cofla 3 (Crear soluciones)
+ 
+ --------  CAPITULO 4  ---------
+ 
+ - Apertura del capitulo 4
+ - Métodos de cadenas
+ - Métodos de arrays
+   Objeto Math
+    Historia de Cofla 4 (Crear soluciones)
+ 
+ ---------  CAPITULO 5 ----------
+ 
+  Apertura de capitulo 5
+  Console (Consola de javascript)
+  Métodos de registro en console
+  Métodos de conteo en console
+  Métodos de agrupación en console
+  Métodos de temporización en console
+  Historia de Cofla 5 (Crear soluciones)
+ 
+ ---------  CAPITULO 6 ---------
+ 
+ - Apertura de capitulo 6
+ - El DOM (Document Object Model)
+ - Métodos de selección de elementos 
+   Métodos de atributos de un elemento
+ - Atributos globales
+ - Atributos de inputs
+ - Propiedad Style
+ - Clases, classList y sus métodos
+ - Obtención y modificación de elementos
+ - Creación de elementos
+ - Obtención y modificacion de childs
+ - Métodos de childs (hijos)
+ - Propiedades de parents (Padres)
+ - Propiedades de siblings (Hermanos)
+ - Nodos, una propiedad extra
+ - Historia de cofla 6 (Crear soluciones)
+ 
+ 
