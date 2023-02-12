@@ -162,6 +162,7 @@ Editor de texto
  
  
  Condicionales
+ Condicional: Sentencia que nos permite validar algo. Ejecutar un bloque de codigo si las condiciones dadas son verdaderas.
 
  If (si la condicion es verdad , se ejecuta){este codigo}
  Elseif ( si if no se ejecuta, mira si esta condicion se cumple. si se cumple){ejecuta esto}
@@ -173,8 +174,11 @@ Editor de texto
  
  ---------  CAPITULO 2  ---------
  
- - Apertura del capitulo 2
- - Arrays
+ - Array 
+   Es una colección o agrupación de elementos en una misma variable,
+   cada uno de ellos ubicado con referencia a la posición que ocupa dentro del mismo.
+   Tanto la longitud como el tipo de los elementos de un array son variables.["Cristian", 30,"Ciudadela"]
+   
  - Arrays Asociativos (Objetos)
  - Bucles e iteración (While, For, etc...)
  - Funciones
