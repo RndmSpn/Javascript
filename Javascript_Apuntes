@@ -186,13 +186,48 @@ Editor de texto
                                                                                          nombre: "MiPc",       let procesador = pc1["procesador"];
                                                                                          procesadro: "I-7",    let nombre = pc1["nombre"];
                                                                                          ram: "4GB",           let nombre = pc1["nombre"];
-                                                                                         espacio: "1TB"        frase = `El nombre de mi PC es: <b>${nombre}`;
-                                                                                         };
+                                                                                         espacio: "1TB"        frase = `El nombre de mi PC es: <b>${nombre}</b><br>
+                                                                                                                        el procesador es: <b>${procesador}</b><br>`;
+                                                                                        };
    
  - Bucles e iteración (While, For, etc...)
    Como en los condicionales, si la condicion se cumple se ejecuta, pero al terminar de ejecutarse vuelve a mirar si la condicion es verdadera, si lo es lo vuelve
                               a ejecutar.
- - Funciones
+   Indeterminado                           
+   · While (mientras)     · Do while (Primero ejecuta y luego pregunta)
+    
+    Determinado
+   · For 
+   · For in (devuelve indice,posicion)   · For of (devuelve contenido,valor)
+  
+ - Recorrer array dentro de un array:
+ 
+  array1=["a","b","c"];
+  array2=["d","e",array1];
+  
+   forRancio: 
+   for (let array in array2){
+        if (array == 2){
+        for (let array of array1) {
+        documnet.write(array + "<br>");
+        } else { 
+          documnet.write(array2[array] + "<br>");
+        }
+       }
+   
+   -Sentencia Label (asocia un nombre a un bucle) -> forRancio: 
+   
+   
+ - Funciones Bloque de codigo que se ejecuta al llamarlo Ej: function saludar(){
+                                                                respuesta= prompt("Hola, como fue tu dia?");
+                                                                if (respuesta == bien){
+                                                                    alert();
+                                                                }else{
+                                                                      alert(""}
+                                                                }
+ 
+ 
+ 
  - Historia de Cofla 2 (Crear soluciones)
  
  --------- CAPITULO 3 ----------
