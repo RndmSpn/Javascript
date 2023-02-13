@@ -22,7 +22,7 @@ Editor de texto
  Condicionales 
  Historia de Cofla 1 (Crear soluciones) 
  
- ---------  CAPITULO 2  --------- 
+ ---------  CAPITULO 2  --------- 175
  
  - Apertura del capitulo 2 
 - Matrices 
@@ -31,7 +31,7 @@ Editor de texto
  - Funciones 
  - Historia de Cofla 2 (Crear soluciones) 
  
- --------- CAPITULO 3 ---------- 
+ --------- CAPITULO 3 ---------- 240
  
  - Apertura del capitulo 3 
  - POO (Programación orientada a objetos) 
@@ -40,7 +40,7 @@ Editor de texto
  - Otros conceptos de Programación orientada a objetos 
  - Historia de Cofla 3 (Crear soluciones) 
  
- --------  CAPITULO 4  --------- 
+ --------  CAPITULO 4  --------- 263
  
  - Apertura del capitulo 4 
  - Métodos de cadenas 
@@ -191,7 +191,7 @@ Editor de texto
                                                                                         };
    
  - Bucles e iteración (While, For, etc...)
-   Como en los condicionales, si la condicion se cumple se ejecuta, pero al terminar de ejecutarse vuelve a mirar si la condicion es verdadera, si lo es lo vuelve
+    Los condicionales, si la condicion se cumple se ejecuta, pero los bucles al terminar de ejecutarse vuelve a mirar si la condicion es verdadera, si lo es lo vuelve
                               a ejecutar.
    Indeterminado                           
    · While (mientras)     · Do while (Primero ejecuta y luego pregunta)
@@ -218,32 +218,65 @@ Editor de texto
    -Sentencia Label (asocia un nombre a un bucle) -> forRancio: 
    
    
- - Funciones Bloque de codigo que se ejecuta al llamarlo Ej: function saludar(){
-                                                                respuesta= prompt("Hola, como fue tu dia?");
-                                                                if (respuesta == bien){
-                                                                    alert();
-                                                                }else{
-                                                                      alert(""}
-                                                                }
+ - Funciones Bloque de codigo que se ejecuta al llamarlo              Ej: function saludar(){
+              Debe tomar alguna entrada y devolver una                     respuesta = prompt("Hola, como fue tu dia?");
+              salida donde hay alguna relación obvia                  if (respuesta == bien){
+                        entre la entrada y la salida                        alert("Me alrgro");
+                                                                         }else{
+                                                                              alert(""}
+                                                                             }}
+                                                                             
+ · return  finaliza la ejecución de la función y especifica un valor 
+           para ser devuelto a quien llama a la función.
+           
+  · Funciones flecha
+  
+  1-const saludar = (nombre,edad)=>{}
+  2-const saludar = nombre=>
+                                                                             
+ Parámetros son los valores que la función espera recibir.
+ En un prototipo de función, los paréntesis detrás del nombre de la función contienen una lista completa de los parámetros de la función y de sus tipos.
  
+ --------- CAPITULO 3 ---------
  
- 
- - Historia de Cofla 2 (Crear soluciones)
- 
- --------- CAPITULO 3 ----------
- 
- - Apertura del capitulo 3
- - POO (Programación orientada a objetos)
+ - POO (Programación orientada a objetos) Paradigma
  - Conceptos básicos de la Programación orientada a objetos
+   · Clase ( fabrica de objetos , plantilla) 
+   · Objeto (resultado de la clase)
+   · Atributo (particularidades, propiedades, caracteristicas.
+   · Metodo ( que hace, funcion)
+   · Constructor funcion que constuye las propiedades de los elelmentos
+   · Instanciacion
+
  - Caracteristicas de la Programación orientada a objetos
- - Otros conceptos de Programación orientada a objetos
- - Historia de Cofla 3 (Crear soluciones)
+   Abstraccion (resumir), Modularidad (Resolver problemas por partes), Encapsulamiento (Aislar)
+   
+  - Otros conceptos de Programación orientada a objetos 
+   Polimorfismo : Diferentes objetos se comportan diferente con el mismo metodo
+   Herencia
+     Ej class perro extends animal{
+              constructor(especie,edad,color)
+              super(especie,edad)
+              this.color=color}
+        
  
  --------  CAPITULO 4  ---------
- 
- - Apertura del capitulo 4
+
  - Métodos de cadenas
+   · startsWith-endsWith , includes, indexOf, lastIndexOf, padStart, padEnd, repeat
+   · split (divide la cadena) · substring (recorta) · toLowerCase - toUpperCase  · tostring  
+   · trim (elimina espacios) -  trimEnd  - trimStart
+ 
  - Métodos de arrays
+   pop ( elimina el ultimo elemento de un array )
+   shift ( elimina el primer elemento de un array )
+   push  ( agrega un elemento al final del array y devuelve la cantidad )
+   reverse invierte el orden del array
+   unshift ( agrega uno o mas elementos al principio )
+   sort ( ordena )
+   splice (  )
+   
+   
    Objeto Math
     Historia de Cofla 4 (Crear soluciones)
  
