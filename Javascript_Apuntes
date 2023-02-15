@@ -278,8 +278,17 @@ Editor de texto
    
    
    Objeto Math
-    Historia de Cofla 4 (Crear soluciones)
- 
+   Metodos
+   sqrt  cbrt
+   max-min
+   random
+   fround
+   floor
+   trunc
+   
+   Propiedades
+   PI SQRT1_2, SQRT2
+   
  ---------  CAPITULO 5 ----------
  
   Apertura de capitulo 5
