@@ -17,8 +17,17 @@ Pestaña Timeline/Preformance
 
 ---------- CAPITULO 9 ----------
  Apertura del capitulo 9 
- Eventos 
- Handlers, Listeners y Objeto Event
+ Eventos Cualquier cambio que ocurre en la pagina a partir del punto 0.
+         Los eventos se asocian con codigo con los manejadores de eventos.
+         
+ Handlers, 
+ Listeners Escucha de eventos.  Ej: const button = document.querySelector(".button");
+                                    button.addEventListener("click",saludar);
+                                    function saludar(){
+                                             alert("hola");
+                                             button.removeEventListener("click",saludar);
+ 
+ y Objeto Event
  Event Flow (Bubbling y Capturing) 
  StopPropagation 
  Mouse Events 
