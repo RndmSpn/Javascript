@@ -268,20 +268,25 @@ Editor de texto
    · trim (elimina espacios) -  trimEnd  - trimStart
  
  - Métodos de arrays
+   Transformadores
    pop ( elimina el ultimo elemento de un array )
    shift ( elimina el primer elemento de un array )
    push  ( agrega un elemento al final del array y devuelve la cantidad )
    reverse invierte el orden del array
    unshift ( agrega uno o mas elementos al principio )
    sort ( ordena )
-   splice (  )
+   splice ( cambia el contenido de un array, parametro 1 donde arranca, parametro 2 elementos a eliminar, parametro 3 elementos a añadir )
    
+   
+   accesores
+   join  ( une todos los elementos de una matriz, u objeto similar, en una cadena y la devueleve)
+   slice ( devuelve una parte del array dentro de un nuevo array, del comienzo al fin, fin no incluido)
    
    Objeto Math
    Metodos
-   sqrt  cbrt
-   max-min
-   random
+   sqrt raiz cuadrada de un numero.    cbrt raiz cubuica de un numero
+   max-min recibe muchos numeros y devuelve el numero mas grande (max), y el mas pequeño(min)
+   random devuelve un numero pseudoaleatorio entre 0 y 1
    fround
    floor
    trunc
