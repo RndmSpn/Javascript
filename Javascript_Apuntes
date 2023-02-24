@@ -287,30 +287,76 @@ Editor de texto
    sqrt raiz cuadrada de un numero.    cbrt raiz cubuica de un numero
    max-min recibe muchos numeros y devuelve el numero mas grande (max), y el mas pequeño(min)
    random devuelve un numero pseudoaleatorio entre 0 y 1
-   fround
-   floor
-   trunc
+   fround Devuelve la representacion flotante de precision smiple mas cercana (4bytes)
+   floor Devuelve el mayor entero menor que o igual a un numero(quita los decimales, redondea hacia abajo)
+   trunc Devuelve la parte entera del numero x, eliminacion de los digitos fraccionarios (quita los decimales)
+   
+   Numero random entre 1 y 100
+   
+   numero = Math.random()*99;
+   numero = Math.floor(numero+1);
+   
+   document.write(numero)
    
    Propiedades
    PI SQRT1_2, SQRT2
    
  ---------  CAPITULO 5 ----------
- 
-  Apertura de capitulo 5
   Console (Consola de javascript)
+  
   Métodos de registro en console
+  assert Aparece un mensaje de error en la consol si la afirmacion es falsa. si es verdadera no aparecera nada.
+  clear Limpia la consola
+  error Muestra un mensaje de error en consola
+  info Emite un mensaje informativo a la consola
+  log Muestra un mensaje en la consola 
+  table Esta funcion toma un argumento obligatorio: data , que debe ser nu array o un y un parametro adicional: columns y nos muestra una tabla en consola
+  warn Imprime un mensaje de advertencia en consola
+  
+  
   Métodos de conteo en console
+  count Registra el numero de veces que se llama a count, toma como argumento opcional una etiqueta
+  countReset Resetea el contador console.count
+  
   Métodos de agrupación en console
+  group Crea un nuevo grupo en linea en el registro de la consola
+  groupEnd Remueve un grupo en linea en el registro de la consola
+  groupCpllapsed Crea un grupo en linea pero contraido
+  
   Métodos de temporización en console
-  Historia de Cofla 5 (Crear soluciones)
+  time Inicia un temporizador
+  timeEnd Detiene el temorizador
+  timeLog Registra el valor actual de un temporizador
  
  ---------  CAPITULO 6 ---------
  
- - Apertura de capitulo 6
  - El DOM (Document Object Model)
+   Interfaz que contiene todos los objetos estandares que nos permiten representar un documento html, xml o xhtml. 
+   Que a su vez tiene otra interfaz que nos permite decir que combina con que.
+   Y otra que nos permite trabajar con javascript.
+   
+  Nodo Cualquier etiqueta que este en el cuerpo
+   
  - Métodos de selección de elementos 
+ getElementById
+ getElementByTagName
+ querySelector
+ querySelectorAll
+ 
    Métodos de atributos de un elemento
+ Definir, obtener y eliminar valores de atributos
+ setAttribute getAttribute  removeAttribute
+ 
  - Atributos globales
+ class             Lista de clases del elemento separadas por espacios.
+ contenteditable   Indica si el contenido puede ser modificado por el usuario (bool)
+ dir               Indica la direccionalidad del texto.
+ hidden            Indica si el elemenro aun no es o ya no es relevante
+ id                define un identificador único.
+ style             Contiene declaraciones de estilo CSS para ser aplicadas al elemento.
+ tabindex          Indica si el elemento peude obtener focus de input.
+ title             Contiene un texto de informacion ralcionada al elemento que pertenece
+ 
  - Atributos de inputs
  - Propiedad Style
  - Clases, classList y sus métodos
