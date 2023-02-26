@@ -299,7 +299,12 @@ Editor de texto
    document.write(numero)
    
    Propiedades
-   PI SQRT1_2, SQRT2
+   PI 
+   SQRT1_2 (raiz cuadrada de 1/2), SQRT2(raiz cuadradada de 2),
+   E (constante de euler),
+   LN2 (LOGARITMO NATURAL DE 2 = 0.693), LN10(2.303), 
+   LOG2E(logaritmo de E con base 2 = 1.433)
+   LOG10E(logaritmo de E con base 10 = 0.434)
    
  ---------  CAPITULO 5 ----------
   Console (Consola de javascript)
