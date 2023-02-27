@@ -362,11 +362,41 @@ Editor de texto
  tabindex          Indica si el elemento peude obtener focus de input.
  title             Contiene un texto de informacion ralcionada al elemento que pertenece
  
- - Atributos de inputs
+ - Atributos de inputs, moodificar atributos
+ className
+ value
+ type
+ accept define que tipo de archivo se acepta 
+ form permite ejecutar un input en un formulario
+ minlength define el minimo de caracteres aceptado
+ placeholder
+ required
+ 
+ 
  - Propiedad Style
+ 
+ 
  - Clases, classList y sus métodos
+ add (añade una clase)
+ remove (remueve una clase)
+ item (devuelve la clase del indice especificado)
+ contains (verifica si ese elemento posee o no , la clase especificada)
+ replace (reemplaza una clase por otra)
+ toggle (si no tiene la clase especificada, la agrega, si ya la tiene, la elimina)
+ 
  - Obtención y modificación de elementos
+ textContent (devuelve el texto de cualquier nodo)
+ innerText (devuelve el texto visible de un nodo element)
+ outerText (devuelve el texto que se encuentra en las etiquetas HTML) NO SE USA 
+ innerHTML (devuelve el contenido html de un elemento)
+ outerHTML (devuelve el codigo HTML completo del elemento)
+
  - Creación de elementos
+ createElements
+ createTextNode
+ crate
+ 
+ 
  - Obtención y modificacion de childs
  - Métodos de childs (hijos)
  - Propiedades de parents (Padres)
