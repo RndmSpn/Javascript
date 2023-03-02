@@ -392,16 +392,52 @@ Editor de texto
  outerHTML (devuelve el codigo HTML completo del elemento)
 
  - Creación de elementos
+ 
+ ej seleccionar elemento, crear elemento/objeto, añadir texto al elemento, añadir el elemento creado al elemento seleccionado.
+    const contenedor = documnent.querySelector(".contenedor");
+    const item = document.createElement("LI");
+    const textoDelItem = item.createTextNode("Esto es un item de la lista ('LI')");
+    item.appendChild(textoDelItem)
+    contenedor.appendChild(item)
+   
+   ej 2 documentfragment
+   const contenedor = document.querySelector(".contenedor");
+   const fragmento = document.createDocumentFragmen();
+   
+   for(i = 0; i < 20; i++){
+      const item = document.createElement("LI");
+      item.innerHTML = "Este es un item de la lista";
+      fragmento.appendChild(item)
+   }
+   contenedor.appendChild(fragmento)
+   
+
  createElements
  createTextNode
- crate
+ createDocumentFragment
  
  
  - Obtención y modificacion de childs
+ firstChild lastChild
+ firstElementChild lastElementChild
+ childNodes
+ children
+ 
+ 
  - Métodos de childs (hijos)
+ replaceChild(nuevo,antiguo)
+ removeChild
+ hasChildnodes
+ 
  - Propiedades de parents (Padres)
+ parentNode parentElement
+ 
  - Propiedades de siblings (Hermanos)
+ nextSibling previousSibling
+ nextElementSiblings previousElementSibling
+ 
  - Nodos, una propiedad extra
- - Historia de cofla 6 (Crear soluciones)
+ closest busca el elemento ascendente mas cercano
+
  
  
